@@ -1,13 +1,13 @@
 {
   "name": "vidly-backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a vidly backend project using mongodb",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Terence",
   "license": "ISC",
   "dependencies": {
     "@hapi/joi": "^15.0.3",
@@ -15,6 +15,7 @@
     "debug": "^4.1.1",
     "express": "^4.17.1",
     "helmet": "^3.18.0",
+    "mongoose": "^5.5.12",
     "morgan": "^1.9.1",
     "nodemon": "^1.19.1",
     "pug": "^2.0.3"

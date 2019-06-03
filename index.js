@@ -1,15 +1,22 @@
-const Joi = require('@hapi/joi');
 const debug = require('debug')('app:startup');
 const morgan = require('morgan');
 const express = require('express');
 const config = require('config');
 const genres = require('./routes/genres');
+const customers = require('./routes/customers');
 const app = express();
+const mongoose = require('mongoose');
+
+mongoose
+  .connect('mongodb://localhost/vidly-backend', { useNewUrlParser: true })
+  .then(() => console.log('Connected to database....'))
+  .catch(() => console.error('Could not connect...'));
 
 app.use(express.json());
 app.use(express.static('public'));
 app.set('view engine', 'pug');
 app.use('/api/genres', genres);
+app.use('/api/customers', customers);
 
 console.log(`Vidly evn is : ${config.get('name')}`);
 console.log(`Vidly mail server is : ${config.get('mail.host')}`);
