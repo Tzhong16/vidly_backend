@@ -1,2 +1,23 @@
-{"message":"Somthing failed!","stack":"Error: Somthing failed!\n    at Object.<anonymous> (/Users/tzhong/Documents/vidly-backend/index.js:30:26)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:531:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","level":"error","timestamp":"2019-06-06T03:08:55.811Z"}
-{"message":"Somthing failed!","stack":"Error: Somthing failed!\n    at Object.<anonymous> (/Users/tzhong/Documents/vidly-backend/index.js:30:26)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)\n    at Function.Module._load (internal/modules/cjs/loader.js:531:3)\n    at Function.Module.runMain (internal/modules/cjs/loader.js:754:12)\n    at startup (internal/bootstrap/node.js:283:19)\n    at bootstrapNodeJSCore (internal/bootstrap/node.js:622:3)","level":"error","timestamp":"2019-06-06T03:11:01.753Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:51:31.220Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:52:41.296Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:53:34.852Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:53:56.268Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:55:20.683Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:55:45.698Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:56:29.487Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:57:46.097Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:58:23.440Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:58:40.923Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:59:20.816Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:59:25.984Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T03:59:37.741Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:00:06.806Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:00:47.021Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:02:13.743Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:02:26.875Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:03:18.982Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:03:26.163Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:03:31.695Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:07:31.114Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:10:39.097Z"}
+{"level":"info","message":"Connected to database....","timestamp":"2019-06-06T04:11:00.141Z"}
