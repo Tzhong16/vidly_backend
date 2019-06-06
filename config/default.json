@@ -1,3 +1,7 @@
 {
-  "name": "Vidly backend"
+  "name": "Vidly backend",
+  "jwtPrivateKey": "",
+  "mail": {
+    "password": "vidly_passowrd"
+  }
 }

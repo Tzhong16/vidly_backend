@@ -1,7 +1,10 @@
 const express = require('express');
+const auth = require('../middleware/auth');
+const admin = require('../middleware/admin');
 const router = express.Router();
 const { Genre, validate } = require('../models/genre');
 const mongoose = require('mongoose');
+
 // router.get('/', (req, res) => {
 //   // res.send('Hello World!!');
 //   res.render('index', { title: 'vidly_app', message: 'Hello World!' });
@@ -37,7 +40,7 @@ router.put('/:id', async (req, res) => {
   res.send(genre);
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', [auth, admin], async (req, res) => {
   const genre = await Genre.findByIdAndRemove(req.params.id);
 
   if (!genre) return res.send('The genre id might be wrong, please check...');
@@ -45,7 +48,7 @@ router.delete('/:id', async (req, res) => {
   res.send(genre);
 });
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 

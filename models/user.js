@@ -1,5 +1,7 @@
 const Joi = require('@hapi/joi');
 const mongoose = require('mongoose');
+const jwt = require('jsonwebtoken');
+const config = require('config');
 
 const usersSchema = new mongoose.Schema({
   name: {
@@ -13,28 +15,41 @@ const usersSchema = new mongoose.Schema({
     unique: true,
     required: true,
     minlength: 5,
-    maxlength: 100
+    maxlength: 255
   },
   password: {
     type: String,
     minlength: 5,
-    maxlength: 50,
+    maxlength: 1024,
     required: true
-  }
+  },
+  isAdmin: Boolean
 });
+
+usersSchema.methods.generateAuthToken = function() {
+  const token = jwt.sign(
+    { _id: this._id, isAdmin: this.isAdmin },
+    config.get('jwtPrivateKey')
+  );
+  return token;
+};
 
 const User = mongoose.model('User', usersSchema);
 
 function userValidation(user) {
   const schema = {
     name: Joi.string()
-      .min(3)
+      .min(5)
+      .max(50)
       .required(),
     email: Joi.string()
       .email()
+      .min(5)
+      .max(255)
       .required(),
     password: Joi.string()
-      .regex(/^[a-zA-Z0-9]{3,30}$/)
+      .min(5)
+      .max(255)
       .required()
   };
 
