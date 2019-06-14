@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 const winston = require('winston');
+const config = require('config');
 
 module.exports = function() {
   mongoose
-    .connect('mongodb://localhost/vidly-backend', {
+    .connect(config.get('db'), {
       useNewUrlParser: true,
       useFindAndModify: false
     })
-    .then(() => winston.info('Connected to database....'));
+    .then(() => winston.info(`Connected to ${config.get('db')}....`));
   mongoose.set('useCreateIndex', true);
 };

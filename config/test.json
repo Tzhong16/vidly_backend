@@ -1,4 +1,8 @@
 {
   "name": "Vidly backend",
-  "jwtPrivateKey": "1234"
+  "jwtPrivateKey": "1234",
+  "db": "mongodb://localhost/vidly-backend_test",
+  "mail": {
+    "host": "test-mail-server"
+  }
 }

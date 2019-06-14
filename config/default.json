@@ -3,5 +3,6 @@
   "jwtPrivateKey": "",
   "mail": {
     "password": "vidly_passowrd"
-  }
+  },
+  "db": "mongodb://localhost/vidly-backend"
 }
